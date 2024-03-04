@@ -6,12 +6,12 @@ pipeline{
         stage("compile"){
            
            steps{ 
-            bat 'g++ -o program program.cpp'
+            sh 'g++ -o program program.cpp'
            }
         }
         stage("run"){
             steps{ 
-          bat 'program.exe'
+          sh 'program.exe'
 
            }
         }
