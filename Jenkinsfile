@@ -34,7 +34,7 @@ pipeline {
         }
         stage('Run') {
             steps {
-                bat '.\\program.exe > output.txt' // for Windows
+                bat '.\\program.exe' // for Windows
                 // sh './program.exe > output.txt' // for Unix-like systems
                 echo 'Output of program.exe:'
                 bat 'type output.txt' // for Windows
