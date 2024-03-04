@@ -11,7 +11,8 @@ pipeline{
         }
         stage("run"){
             steps{ 
-           bat '.\\program.exe'
+          bat 'program.exe'
+
            }
         }
     
